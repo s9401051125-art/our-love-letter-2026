@@ -1,0 +1,76 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>寫給妳的情書 ♡</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&display=swap');
+:root{--rose:#b96d83;--ink:#805566}*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:'Noto Serif TC',serif;color:var(--ink);background:radial-gradient(circle at 15% 10%,#fff9f7 0,transparent 45%),linear-gradient(145deg,#f9e6e8,#f8f0e8 65%,#f6dce3);display:flex;align-items:center;justify-content:center;padding:28px 14px;overflow-x:hidden}.petal{position:fixed;top:-30px;pointer-events:none;color:#d995a8;opacity:.45;animation:fall linear infinite;z-index:0}@keyframes fall{to{transform:translate(60px,110vh) rotate(270deg)}}.wrap{width:min(760px,100%);position:relative;z-index:1;text-align:center}.eyebrow{letter-spacing:.28em;font-size:12px;color:#ae8390}.heading{font-size:clamp(25px,5vw,38px);font-weight:400;margin:12px 0 25px}.paper{position:relative;min-height:460px;padding:55px clamp(25px,7vw,75px) 80px;background:linear-gradient(130deg,#fffdf8,#fff9f3);border:1px solid #fff;box-shadow:0 18px 65px #a76e8033,0 3px 12px #bda2a32a;text-align:left;border-radius:3px;overflow:visible}.paper:before{content:'';position:absolute;inset:17px;border:1px solid #e7c9c8;pointer-events:none}.date{text-align:right;font-size:12px;color:#b39197;letter-spacing:.12em;margin-bottom:34px}.salutation{font-size:19px;margin-bottom:25px}.letter{white-space:pre-wrap;overflow-wrap:anywhere;font-size:17px;line-height:2.35;letter-spacing:.055em;min-height:160px}.writing-line{display:inline}.quill{position:absolute;width:54px;height:80px;pointer-events:none;opacity:0;transform:translate(-12px,-64px) rotate(-12deg);transition:left .12s linear,top .12s linear,opacity .2s;filter:drop-shadow(2px 5px 3px #a68b8740);z-index:3}.quill svg{width:100%;height:100%}.signature{text-align:right;margin-top:28px;color:#bd7b90;font-size:17px;opacity:0;transition:opacity 1s}.signature.show{opacity:1}.controls{margin:25px auto 0;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}button{border:1px solid #c58a9a;background:#ba788b;color:white;border-radius:100px;padding:14px 30px;font:inherit;font-size:15px;cursor:pointer;box-shadow:0 7px 20px #a76b7b30}button:hover{background:#a9687c}button.secondary{background:#fffaf8;color:#a9687c}.note{font-size:12px;color:#a7848d;margin-top:16px}.finish{display:none;margin-top:22px;font-size:22px;color:#bc718b;animation:appear 1s ease both}@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.heart{position:fixed;pointer-events:none;animation:float 2.8s ease-out forwards;z-index:5}@keyframes float{to{transform:translateY(-220px) rotate(20deg);opacity:0}}@media(max-width:500px){.paper{min-height:500px;padding:45px 31px 60px}.paper:before{inset:11px}.letter{font-size:15px;line-height:2.2}.quill{width:45px;height:67px}.date{margin-bottom:26px}}
+</style></head><body><div class="wrap"><div class="eyebrow">A LETTER FOR YOU · 2026.11.21</div><h1 class="heading">有一封信，想親手寫給你 ♡</h1><section class="paper" id="paper"><div class="date">November 21, 2026</div><div class="letter" id="letter"><span class="writing-line" id="written"></span><span id="cursor"></span></div><div class="signature" id="signature">永遠愛你的寶貝 ♡</div><div class="quill" id="quill"><svg viewBox="0 0 70 110" xmlns="http://www.w3.org/2000/svg"><path d="M16 89C1 57 18 12 62 2c-1 34-15 71-46 87Z" fill="#eac0c8" stroke="#b77b8f" stroke-width="1.5"/><path d="M16 89C29 57 44 27 62 2" stroke="#9b687c" stroke-width="2" fill="none"/><path d="M15 89 8 108" stroke="#9b687c" stroke-width="2.5"/><path d="M23 70 11 57M32 50 16 39M42 31 27 21M24 70 43 69M36 49 53 45" stroke="#c18d9e" stroke-width="1" fill="none"/></svg></div></section><div class="finish" id="finish">♡ 一週年快樂，愛你一萬年 ♡</div><div class="controls"><button id="start">打開2026年最感動的一瞬間 ♡</button><button class="secondary" id="replay" hidden>再看一次 ↻</button></div><p class="note">每一個字，都是我想慢慢告訴你的心意。</p></div><script>
+// ✨ 在這裡更改你想說的話。保留反引號 `，可以自由換行。
+const MESSAGE = `To. 我最最親愛的寶寶 ♡
+
+寶寶～今天是我們在一起滿一週年的日子耶！💗
+
+時間真的過得好快好快，怎麼感覺才剛在一起沒多久，一轉眼就已經牽著彼此的手走過一整年了！
+
+可能是因為這一年有你陪在我身邊，每一天都過得好幸福，所以才覺得時間偷偷溜走得特別快吧！
+
+可是仔細回想起來，我們真的一起創造了好多好多回憶，去了好多地方，吃了好多好吃的，你的車技也越來越厲害了 ദി- ̫ -)♡
+
+每次回想起我們剛在一起的時候，心裡還是會甜甜的，覺得那時候的我們好可愛、好幸福。沒想到當初那個讓我心動的人，現在已經是陪在我身邊一整年的寶寶了！
+
+雖然今年暑假的那三個月過得特別特別快，我們都忙著工作，沒有太多時間可以出去玩，但你還是會用那些平凡又可愛的小方式偷偷疼愛我，讓我覺得自己一直都是被你好好捧在手心裡的小寶貝 ♡
+
+雖然我常常會故意跟你說「你是不是不愛我了！」但還不是因為平常的你真的太疼我了嘛！害我都被你寵壞了，才會忍不住想要你再多愛我一點點(˶ˊᵕˋ˵)
+
+我知道，只要是我喜歡的、想要的，你都會盡自己最大的努力滿足我。可是寶寶，其實我也知道你工作真的很辛苦，所以有時候就算心裡很想要，也會捨不得讓你花那麼多錢。
+
+比起那些東西，我更希望我的寶寶可以不要有那麼大的壓力，可以每天都開開心心、輕輕鬆鬆的。
+
+雖然現在的我可能還沒有辦法幫你分擔太多經濟上的壓力，但是！我的心可是一直一直跟你站在同一邊的喔！你累的時候可以跟我撒嬌，煩的時候可以跟我抱怨，不開心的時候也可以通通告訴我，雖然我不一定能幫你解決所有事情，但我一定會當你最忠實的小聽眾哈哈哈 ♡
+
+而且我覺得今年的寶寶真的很棒很棒！
+
+你勇敢地跳出了待了十年的舒適圈，開始接觸不一樣的工作和生活。我知道這個決定一點都不容易，也知道這一路上你一定有很多壓力和不安。
+
+可是看見現在的你，工作心情還算不錯，也能早早回家，有更多時間可以休息、陪陪我，我真的替你感到好開心！
+
+希望你也要記得，你已經很努力、很棒了，不用什麼事情都自己扛著，也不用總是逼自己那麼辛苦。因為我最希望的，就是我的寶寶可以健健康康、快快樂樂的 ♡
+
+今年我們一起走過了台灣好多縣市，還一起飛去日本玩耶！每次想到那些回憶都覺得好幸福。
+
+希望我們的第二年、第三年，還有以後好多好多年，都可以繼續牽著手到處走走看看！當然啦～第二年也要努力安排一次出國旅行喔！這是我偷偷許下的願望 ദി ˉ͈̀꒳ˉ͈́ )✧
+
+我真的真的好喜歡跟你一起出門。
+
+其實去哪裡都沒有那麼重要，重要的是旁邊的人是你。只要跟你待在一起，就算只是吃個飯、逛逛街，或是做一些很平凡的小事情，我都覺得好幸福。
+
+因為跟你出門、跟你待在一起，就是我最喜歡的充電方式。只要有你陪著，好像一整個禮拜的疲憊都可以被充得滿滿的！
+
+雖然我們偶爾也會鬥嘴、吵吵架，有時候還會互相鬧脾氣，但回頭想想，還是覺得我們好甜好可愛喔哈哈哈。
+
+而且我很喜歡我們兩個總是有說不完的話，生活裡發生什麼大事小事，都會想第一時間分享給對方。明明每天都在聊天，卻還是有好多好多事情想跟你說。
+
+我想，這就是我最喜歡我們的地方吧！不只是情侶，也是彼此最親密、最有默契的好朋友 ♡
+
+其實還有好多好多想跟你說的話，但我們平常好像就已經把愛你、想你、喜歡你通通掛在嘴邊了，所以最後還是想好好謝謝你。
+
+謝謝你這一年來給我的滿滿偏愛，謝謝你總是把我的小願望放在心上，也謝謝你一直用你的方式好好愛著我。
+
+就連我想要一件這麼貴的被被，你也默默幫我安排上了！真的很喜歡這份禮物💝
+
+但其實比起收到被子，更讓我開心的是，你總是記得我隨口說過的喜歡，也願意把我的小小願望當成重要的事情。
+
+那種被你惦記著、被你放在心上的感覺，真的好幸福好幸福。
+
+希望未來的日子裡，我也可以成為讓你覺得幸福、安心又快樂的存在。
+
+希望我們可以繼續一起吃好多好吃的、去好多沒去過的地方、拍好多好多照片，累積更多只屬於我們兩個的小回憶。
+
+也希望不管過了幾年，我們都還是會像現在一樣，喜歡黏著彼此、跟對方分享生活，偶爾幼稚地撒撒嬌，然後一直一直把對方放在心上。
+
+第一年是你，第二年也要是你，以後的每一年，我都還想繼續當你最最幸福的小寶貝 ♡
+
+我愛你喔，我最親愛的寶寶！
+
+一週年快樂！以後也請你繼續多多疼愛你的小寶貝啦！ 💗
+
+♡ 365天的喜歡，還有好多好多天的愛你 ♡`;
+const written=document.getElementById('written'),cursor=document.getElementById('cursor'),quill=document.getElementById('quill'),paper=document.getElementById('paper'),start=document.getElementById('start'),replay=document.getElementById('replay'),signature=document.getElementById('signature'),finish=document.getElementById('finish');let timer=null,index=0;function position(){const a=cursor.getBoundingClientRect(),b=paper.getBoundingClientRect();quill.style.left=(a.left-b.left)+'px';quill.style.top=(a.top-b.top+13)+'px'}function hearts(){for(let i=0;i<20;i++){setTimeout(()=>{let h=document.createElement('span');h.className='heart';h.textContent=['♡','♥','✿'][i%3];h.style.left=(15+Math.random()*70)+'vw';h.style.top=(65+Math.random()*25)+'vh';h.style.color=['#d78da5','#e8a6b9','#caa0aa'][i%3];h.style.fontSize=(14+Math.random()*20)+'px';document.body.appendChild(h);setTimeout(()=>h.remove(),3000)},i*120)}}function begin(){clearTimeout(timer);index=0;written.textContent='';signature.classList.remove('show');finish.style.display='none';start.hidden=true;replay.hidden=true;quill.style.opacity='1';position();function next(){if(index>=MESSAGE.length){quill.style.opacity='0';signature.classList.add('show');finish.style.display='block';replay.hidden=false;hearts();return}const ch=MESSAGE[index++];written.textContent+=ch;position();if(index%12===0||ch==='\n'){const r=cursor.getBoundingClientRect();if(r.bottom>window.innerHeight-90)window.scrollBy({top:r.bottom-window.innerHeight+180,behavior:'smooth'})}timer=setTimeout(next,ch==='\n'?340:ch==='，'||ch==='。'?420:105)}timer=setTimeout(next,450)}start.addEventListener('click',begin);replay.addEventListener('click',begin);window.addEventListener('resize',()=>{if(index&&index<MESSAGE.length)position()});for(let i=0;i<18;i++){const p=document.createElement('span');p.className='petal';p.textContent=i%3?'♡':'✿';p.style.left=(Math.random()*100)+'vw';p.style.animationDuration=(9+Math.random()*12)+'s';p.style.animationDelay=(-Math.random()*20)+'s';p.style.fontSize=(11+Math.random()*13)+'px';document.body.appendChild(p)}
+</script></body></html>
